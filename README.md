@@ -62,7 +62,7 @@ You can then use the `WordPressPlugin` test:
 $runner = (new TestRunner('Sanity Tests'))
             ->with_test_group(
                 (new TestGroup('WordPress Plugins'))
-                    ->with_test(new WordPressPlugin('ACF Pro', 'advanced-custom-fields-pro/acf.php')
+                    ->with_test(new WordPressPlugin('ACF Pro', 'advanced-custom-fields-pro/acf.php'))
             )
 ;
 ```
