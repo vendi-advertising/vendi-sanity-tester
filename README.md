@@ -48,3 +48,21 @@ $runner = (new TestRunner('Sanity Tests'))
 
 $runner->run();
 ```
+
+## WordPress
+If you need to test WordPress features it is up to you to make sure that WordPress is booted up first. The simplest way is usually to load `wp-load.php`. For instance, if your test file is in the root of a plugin at a URL that you are manually calling you can probably just use:
+```
+define( 'WP_USE_THEMES', false );
+require '../../../wp-load.php' ;
+```
+The `define` line is essentially a way to tell WordPress that you want a lite mode.
+
+You can then use the `WordPressPlugin` test:
+```
+$runner = (new TestRunner('Sanity Tests'))
+            ->with_test_group(
+                (new TestGroup('WordPress Plugins'))
+                    ->with_test(new WordPressPlugin('ACF Pro', 'advanced-custom-fields-pro/acf.php')
+            )
+;
+```
