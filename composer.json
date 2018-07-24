@@ -1,7 +1,6 @@
 {
     "name": "vendi-advertising/vendi-sanity-tester",
     "type": "library",
-    "version" : "1.0.0",
     "description": "Utility to test for sanity of underlying system during install.",
     "keywords": ["vendi","vendi-advertising"],
     "homepage": "https://github.com/vendi-advertising/vendi-sanity-tester",
