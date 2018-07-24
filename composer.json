@@ -1,0 +1,23 @@
+{
+    "name": "vendi-advertising/vendi-sanity-tester",
+    "type": "library",
+    "version" : "1.0.0",
+    "description": "Utility to test for sanity of underlying system during install.",
+    "keywords": ["vendi","vendi-advertising"],
+    "homepage": "https://github.com/vendi-advertising/vendi-sanity-tester",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Haas",
+            "email": "chris@vendiadvertising.com",
+            "homepage": "https://www.vendiadvertising.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {"Vendi\\SanityTester\\": "src/"}
+    }
+}
