@@ -31,6 +31,6 @@ class WordPressPlugin extends TestBase
             return false;
         }
 
-        return false;
+        return true;
     }
 }
